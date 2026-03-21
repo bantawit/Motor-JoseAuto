@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hammer, PaintBucket, Wrench, Zap, Settings, ShieldCheck } from 'lucide-react';
+import { Hammer, PaintBucket, Wrench, Zap, Settings, ShieldCheck, BatteryCharging, Wind } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Services.css';
 
@@ -33,6 +33,16 @@ const services = [
         icon: <ShieldCheck size={32} />,
         title: 'PRE-ITV',
         description: 'Inspección exhaustiva garantizada. No dejes nada al azar.'
+    },
+    {
+        icon: <BatteryCharging size={32} />,
+        title: 'HÍBRIDOS Y ELÉCTRICOS',
+        description: 'Mantenimiento especializado y diagnóstico avanzado para sistemas de alto voltaje.'
+    },
+    {
+        icon: <Wind size={32} />,
+        title: 'CLIMATIZACIÓN',
+        description: 'Recarga de gas, detección de fugas y reparación experta de aire acondicionado.'
     }
 ];
 

@@ -135,3 +135,30 @@
         font-size: 3rem;
     }
 }
+
+/* Hero Badges */
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    z-index: 20;
+}
+
+.hero-badges .badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-badges .badge span {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

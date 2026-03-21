@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import './App.css';
 import CarLogo from './components/CarLogo';
+import WhatsAppButton from './components/WhatsAppButton';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Reviews from './components/Reviews';
@@ -48,6 +49,7 @@ function App() {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

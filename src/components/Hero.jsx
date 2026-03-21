@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Shield, CheckCircle } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -42,6 +42,22 @@ const Hero = () => {
                     >
                         PASIÓN POR EL DETALLE. EXCELENCIA EN CADA REPARACIÓN.
                     </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.7, duration: 0.8 }}
+                        className="hero-badges"
+                    >
+                        <div className="badge glass">
+                            <CheckCircle size={20} className="text-primary" />
+                            <span>TRABAJAMOS CON TODAS LAS ASEGURADORAS</span>
+                        </div>
+                        <div className="badge glass">
+                            <Shield size={20} className="text-primary" />
+                            <span>MANTENIMIENTO OFICIAL SIN PERDER GARANTÍA</span>
+                        </div>
+                    </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
