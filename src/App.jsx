@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import './App.css';
+import CarLogo from './components/CarLogo';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Reviews from './components/Reviews';
@@ -17,7 +18,8 @@ function App() {
     <div className="app">
       <header className="header glass">
         <div className="container header-content">
-          <div className="logo">
+          <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+            <CarLogo style={{ width: '120px', marginRight: '15px' }} />
             <h1>MOTOR<span className="text-primary">JOSEAUTO</span></h1>
           </div>
 
