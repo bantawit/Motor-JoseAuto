@@ -3,6 +3,15 @@ import { Instagram, Image } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Gallery.css';
 
+const galleryImages = [
+    { src: '/Motor-JoseAuto/images/painting.png', alt: 'Cabina de pintura profesional' },
+    { src: '/Motor-JoseAuto/images/diagnostics.png', alt: 'Diagnosis avanzada' },
+    { src: '/Motor-JoseAuto/images/brakes.png', alt: 'Reparación de frenos de alta gama' },
+    { src: '/Motor-JoseAuto/images/electric.png', alt: 'Mantenimiento de vehículos eléctricos' },
+    { src: '/Motor-JoseAuto/images/workshop.png', alt: 'Taller premium' },
+    { src: '/Motor-JoseAuto/images/detailing.png', alt: 'Detallado final de carrocería' },
+];
+
 const Gallery = () => {
     return (
         <section className="section gallery-section" id="gallery">
@@ -19,19 +28,16 @@ const Gallery = () => {
                 </div>
 
                 <div className="gallery-grid">
-                    {[1, 2, 3, 4, 5, 6].map((item, index) => (
+                    {galleryImages.map((image, index) => (
                         <motion.div
                             className="gallery-item"
-                            key={item}
+                            key={index}
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <div className="placeholder-image">
-                                <Image size={40} className="gallery-icon" />
-                                <span>TRABAJO REALIZADO {item}</span>
-                            </div>
+                            <img src={image.src} alt={image.alt} className="gallery-img" />
                             <div className="gallery-overlay">
                                 <span>Ver en Instagram</span>
                             </div>
